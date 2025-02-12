@@ -98,7 +98,7 @@ Use Postman or Swagger UI to test endpoints.
 
 ## **Deployment Guide**
 
-Frontend Deployment (Vercel/Netlify)
+Frontend Deployment (Vercel)
 Build the frontend:
 
 ```sh
@@ -110,7 +110,7 @@ vercel
 ```
 OR deploy manually by uploading /build to Netlify.
 
-## **Backend Deployment (Render/Heroku)**
+## **Backend Deployment (Render)**
 Push backend code to GitHub.
 Deploy on Render or Heroku by linking GitHub repository.
 Set environment variables on the deployment platform.
