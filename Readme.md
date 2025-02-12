@@ -109,3 +109,11 @@ Deploy to Vercel:
 vercel
 ```
 OR deploy manually by uploading /build to Netlify.
+
+## **Backend Deployment (Render)**
+Push backend code to GitHub.
+Deploy on Render or Heroku by linking GitHub repository.
+Set environment variables on the deployment platform.
+MongoDB Atlas Configuration
+Create an MongoDB Atlas account.
+Get the connection URI and replace MONGO_URI in .env.
