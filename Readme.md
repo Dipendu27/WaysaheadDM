@@ -49,3 +49,71 @@ Ensure you have the following installed:
 ```sh
 git clone https://github.com/your-username/waysahead-global.git
 cd waysahead-global
+```
+
+## **Project Overview**
+
+waysahead-global/
+│── frontend/       # React.js (Material UI, Redux, SEO)
+│── backend/        # Express.js (Node.js, MongoDB, JWT)
+│── README.md       # Documentation
+
+
+## **Running the Project**
+
+```sh
+cd backend
+npm install
+```
+
+Create a .env file in backend/ and add:
+```sh
+MONGO_URI=your-mongodb-uri
+JWT_SECRET=your-secret-key
+OPENAI_API_KEY=your-openai-api-key
+```
+Then start backend server:
+```sh
+npm run dev
+```
+
+## **Frontend Setup**
+```sh
+cd frontend
+npm install
+```
+
+API Documentation
+This project uses Swagger/Postman for API documentation.
+
+Example Endpoints:
+Method	Endpoint	Description
+POST	/api/auth/login	User login (JWT authentication)
+POST	/api/contact	Send a contact form message
+GET	/api/jobs	Fetch job listings from MongoDB
+To test APIs:
+
+Run the backend (npm run dev).
+Use Postman or Swagger UI to test endpoints.
+
+## **Deployment Guide**
+
+Frontend Deployment (Vercel/Netlify)
+Build the frontend:
+
+```sh
+npm run build
+```
+Deploy to Vercel:
+```sh
+vercel
+```
+OR deploy manually by uploading /build to Netlify.
+
+## **Backend Deployment (Render/Heroku)**
+Push backend code to GitHub.
+Deploy on Render or Heroku by linking GitHub repository.
+Set environment variables on the deployment platform.
+MongoDB Atlas Configuration
+Create an MongoDB Atlas account.
+Get the connection URI and replace MONGO_URI in .env.
